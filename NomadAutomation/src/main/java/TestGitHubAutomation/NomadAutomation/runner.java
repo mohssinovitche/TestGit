@@ -8,7 +8,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(features ="Features")
 public class runner 
 {
-	String test;
+	String slip;
 	
      
 
