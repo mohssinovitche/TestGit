@@ -1,15 +1,12 @@
-package TestGitHubAutomation.NomadAutomation;
+package nomadAutomation;
 import org.junit.runner.RunWith;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features ="Features")
+@CucumberOptions(features ="Features",glue={})
 public class runner 
 {
-	String test;
-	
-     
 
 }
