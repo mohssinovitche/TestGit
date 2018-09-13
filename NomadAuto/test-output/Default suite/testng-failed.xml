@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="nomadAutomation.UnderTest">
+      <class name="nomadAutomation.TestSuite">
         <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="testUntitledTestCase"/>
+          <include name="main"/>
+          <include name="OpenBrowser"/>
+          <include name="CloseBrowser"/>
         </methods>
-      </class> <!-- nomadAutomation.UnderTest -->
+      </class> <!-- nomadAutomation.TestSuite -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

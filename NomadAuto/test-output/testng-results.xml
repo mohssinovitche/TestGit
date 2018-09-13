@@ -1,75 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" total="1" passed="0">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="148" started-at="2018-09-09T20:14:33Z" finished-at="2018-09-09T20:14:34Z">
+  <suite name="Default suite" duration-ms="34999" started-at="2018-09-13T21:28:43Z" finished-at="2018-09-13T21:29:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="148" started-at="2018-09-09T20:14:33Z" finished-at="2018-09-09T20:14:34Z">
-      <class name="nomadAutomation.UnderTest">
-        <test-method status="FAIL" signature="setUp()[pri:0, instance:nomadAutomation.UnderTest@14acaea5]" name="setUp" is-config="true" duration-ms="0" started-at="2018-09-09T21:14:33Z" finished-at="2018-09-09T21:14:33Z">
-          <exception class="java.lang.IllegalStateException">
+    <test name="Default test" duration-ms="34999" started-at="2018-09-13T21:28:43Z" finished-at="2018-09-13T21:29:18Z">
+      <class name="nomadAutomation.TestSuite">
+        <test-method status="PASS" signature="OpenBrowser()[pri:0, instance:nomadAutomation.TestSuite@c038203]" name="OpenBrowser" is-config="true" duration-ms="32634" started-at="2018-09-13T22:28:43Z" description="Ouverture du Navigateur" finished-at="2018-09-13T22:29:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method status="FAIL" signature="main()[pri:0, instance:nomadAutomation.TestSuite@c038203]" name="main" duration-ms="2220" started-at="2018-09-13T22:29:16Z" description="Scénarion 1" finished-at="2018-09-13T22:29:18Z">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases]]>
+              <![CDATA[Failed to decode response from marionette
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'RBPMSBITRI', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 5916, moz:profile: C:\Users\msbitri\AppData\Lo..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: e06a3bb7-0cbf-4272-82c0-80a9351784df
+*** Element info: {Using=id, value=username}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:124)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:41)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:141)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:339)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:158)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:120)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:98)
-	at nomadAutomation.UnderTest.setUp(UnderTest.java:21)
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'RBPMSBITRI', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 5916, moz:profile: C:\Users\msbitri\AppData\Lo..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: e06a3bb7-0cbf-4272-82c0-80a9351784df
+*** Element info: {Using=id, value=username}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:365)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at nomadClasses.NomadUserClasses.userAuthentication(NomadUserClasses.java:35)
+	at nomadAutomation.TestSuite.main(TestSuite.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:641)
-	at org.testng.TestRunner.run(TestRunner.java:609)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="testUntitledTestCase()[pri:0, instance:nomadAutomation.UnderTest@14acaea5]" name="testUntitledTestCase" duration-ms="1" started-at="2018-09-09T21:14:34Z" finished-at="2018-09-09T21:14:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUntitledTestCase -->
-        <test-method status="FAIL" signature="tearDown()[pri:0, instance:nomadAutomation.UnderTest@14acaea5]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-09-09T21:14:34Z" finished-at="2018-09-09T21:14:34Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at nomadAutomation.UnderTest.tearDown(UnderTest.java:37)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
 	at org.testng.TestRunner.privateRun(TestRunner.java:767)
 	at org.testng.TestRunner.run(TestRunner.java:617)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
@@ -86,11 +72,69 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- nomadAutomation.UnderTest -->
+        </test-method> <!-- main -->
+        <test-method status="FAIL" signature="CloseBrowser()[pri:0, instance:nomadAutomation.TestSuite@c038203]" name="CloseBrowser" is-config="true" duration-ms="0" started-at="2018-09-13T22:29:18Z" description="Fermeture du navigateur" finished-at="2018-09-13T22:29:18Z">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Tried to run command without establishing a connection
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'RBPMSBITRI', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 5916, moz:profile: C:\Users\msbitri\AppData\Lo..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: e06a3bb7-0cbf-4272-82c0-80a9351784df]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Tried to run command without establishing a connection
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'RBPMSBITRI', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 5916, moz:profile: C:\Users\msbitri\AppData\Lo..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: e06a3bb7-0cbf-4272-82c0-80a9351784df
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:435)
+	at nomadAutomation.TestSuite.CloseBrowser(TestSuite.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.TestRunner.afterRun(TestRunner.java:1021)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- nomadAutomation.TestSuite -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

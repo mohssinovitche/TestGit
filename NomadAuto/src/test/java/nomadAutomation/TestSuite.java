@@ -12,7 +12,7 @@ import org.testng.annotations.AfterTest;
 public class TestSuite {
 	public ResourceBundle bundle = ResourceBundle.getBundle("NomadAutomation.Config");
 	public String nomadUrl = bundle.getString("nomadUrl");
-	public String mockUrl = bundle.getString("mockdUrl");
+	public String mockUrl = bundle.getString("mockUrl");
 	public String driverPath = bundle.getString("driverPath");
 	public static WebDriver driver;
 	public NomadUserClasses objet = new NomadUserClasses(bundle, nomadUrl, driverPath);
@@ -28,7 +28,7 @@ public class TestSuite {
 	public void main() {
 		driver = objet.userAuthentication(bundle.getString("adminLogin"), bundle.getString("adminMdp"),
 				driver, nomadUrl);
-		driver= objet.goToCeateUser(driver, nomadUrl);
+		//driver= objet.goToCeateUser(driver, nomadUrl);
 		
 
 	}
